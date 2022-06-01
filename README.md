@@ -1,9 +1,8 @@
+Втора лабораториска вежба по Софтверско инженерство
+
+
+
 Petar Milchevski¸ 173257
-
-
-
-
-
 
 Control Flow Graph
  
@@ -11,10 +10,14 @@ Control Flow Graph
 
 
 Nodes=27
+
 Edges=34
+
 Ja koristime formulata E-n+2
+
 34-27+2=9
-Kompleksonsta e 9
+
+Kompleksnosta e 9
 
 
 
