@@ -14,6 +14,7 @@ Nodes=27
 Edges=34
 Ja koristime formulata E-n+2
 34-27+2=9
+Kompleksonsta e 9
 
 
 
