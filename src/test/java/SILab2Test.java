@@ -18,14 +18,14 @@ class SILab2Test {
         ex = assertThrows(IllegalArgumentException.class, () -> SILab2.function(List.of("0", "0", "0", "0", "0", "0", "0","0")));
         assertTrue(ex.getMessage().equals("List length should be a perfect square"));
 
-        List<String> vlez = List.of("0", "#", "0", "0", "0", "#", "#", "#", "#");
+        List<String> vlez = List.of("0", "#", "0", "#", "0", "#", "0", "#", "#");
 //        "0", "#", "0"
-//        "0", "0", "#"
-//        "#", "#", "#"
-        List<String> izlez = List.of("1", "#", "2", "1", "3", "#", "#", "#", "#");
-//        "1", "#", "2"
-//        "1", "3", "#"
-//        "#", "#", "#"
+//        "#", "0", "#"
+//        "0", "#", "#"
+        List<String> izlez = List.of("2", "#", "2", "#", "4", "#", "2", "#", "#");
+//        "2", "#", "2"
+////      "#", "4", "#"
+////      "2", "#", "#"
         assertEquals(SILab2.function(vlez), izlez);
     }
 

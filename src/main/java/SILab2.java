@@ -12,7 +12,7 @@ public class SILab2 {
         if (rootOfN * rootOfN  != n) {//7
             throw new IllegalArgumentException("List length should be a perfect square");//8
         }//9
-        List<String> numMines = new ArrayList<>();//10  ["0", "#", "0", "0", "0", "#", "0", "#", "#"]
+        List<String> numMines = new ArrayList<>();//10 ["0", "#", "0", "0", "0", "#", "0", "#", "#"]
         for (int i = 0; i < n; i++) {//11
             if (!list.get(i).equals("#")) { //12
                 int num = 0;//13
