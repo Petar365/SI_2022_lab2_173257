@@ -19,10 +19,31 @@ Ja koristime formulata E-n+2
 
 Kompleksnosta e 9
 
+Тест случаи според критериумот Every statement
 
+        IllegalArgumentException ex = assertThrows(IllegalArgumentException.class, () -> SILab2.function(List.of()));
+        assertTrue(ex.getMessage().equals("List length should be greater than 0"));
 
+        ex = assertThrows(IllegalArgumentException.class, () -> SILab2.function(List.of("0", "0", "0", "0", "0", "0", "0","0")));
+        assertTrue(ex.getMessage().equals("List length should be a perfect square"));
 
+        List<String> vlez = List.of("0", "#", "0", "#", "0", "#", "0", "#", "#");
+//        "0", "#", "0"
+//        "#", "0", "#"
+//        "0", "#", "#"
+List<String> izlez = List.of("2", "#", "2", "#", "4", "#", "2", "#", "#");
+//        "2", "#", "2"
+////      "#", "4", "#"
+////      "2", "#", "#"
+assertEquals(SILab2.function(vlez), izlez);
 
+Тест случаи според критериумот Every path
+ 
+IllegalArgumentException ex = assertThrows(IllegalArgumentException.class, () -> SILab2.function(List.of()));
+        assertTrue(ex.getMessage().equals("List length should be greater than 0"));
+
+        ex = assertThrows(IllegalArgumentException.class, () -> SILab2.function(List.of("0", "0", "0", "0", "0", "0", "0","0")));
+        assertTrue(ex.getMessage().equals("List length should be a perfect square"));
 
 
 
